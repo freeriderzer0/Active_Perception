@@ -2,7 +2,7 @@ import numpy as np
 from shapely import *
 
 params = [
-    {"start": [150, 400, 0], "target": [1450, 150], "scale": 50},
+    {"start": [150, 400, 1.57], "target": [1450, 150], "scale": 50},
     {"start": [77, 693, 0], "target": [1500, 700], "scale": 66}
 ]
 

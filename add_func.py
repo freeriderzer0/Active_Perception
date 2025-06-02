@@ -4,7 +4,7 @@ import pygame as pg
 pg.font.init()
 font = pg.font.SysFont('freesansbold', 24)
 
-PERCEPTION = {"Active":1, "Standart":0, "Rotation":2}
+PERCEPTION = {"Active":1, "Standard":0, "Rotation":2}
 
 def drawText(screen, s, x, y):
     surf = font.render(s, True, (0, 0, 255))

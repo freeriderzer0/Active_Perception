@@ -21,8 +21,8 @@ class GUI:
                                                     manager=self.manager)
             
         self.perception_menu = gui.elements.UIDropDownMenu(relative_rect=pg.Rect((1750,550), (100, 50)),
-                                                    options_list=['Standart','Active','Rotation'],
-                                                    starting_option='Standart',
+                                                    options_list=['Standard','Active','Rotation'],
+                                                    starting_option='Standard',
                                                     manager=self.manager)
         
         self.frequency_label = gui.elements.UILabel(relative_rect=pg.Rect((1600,600), (150, 50)),
