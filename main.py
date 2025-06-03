@@ -142,11 +142,11 @@ def interface():
         if draw_robot:
             robot.draw(screen)
             robot.goto(path[position], objects, dt, speed)
-            if euclidean_distance(robot.getPos(), path[position]) < 20 and position < len(path)-1:
+            if euclidean_distance(robot.getPos(), path[position]) < param["scale"]*0.6 and position < len(path)-1:
                 position+=1
             robot.view_control(screen,perception_type,union_objects,dt,global_angle,view_speed,tick%int(fps/frequency)==0)
         
-        if euclidean_distance(robot.getPos(), param["target"]) < 30:
+        if euclidean_distance(robot.getPos(), param["target"]) < param["scale"]*0.6:
             space = Polygon([(0,0),(0,1000),(1600,1000),(1600,0)])
             space = intersection(space, LineString(path).buffer(param["scale"]*8))
             for o in objects:
